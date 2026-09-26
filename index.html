@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#31544D">
+<title>株式会社小倉家｜建物の顔を、ひとつずつ。</title>
+<meta name="description" content="株式会社小倉家が所有する建物を紹介する、小さな建築ギャラリーです。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="hero-lockup">
+    <div class="hero-mark" aria-hidden="true"><img src="assets/logo/r08-color.svg" alt=""></div>
+    <img class="hero-brush" src="assets/logo/oguraya-brush-dark.svg" alt="小倉家">
+  </div>
+  <p class="hero-copy">建物の顔を、ひとつずつ。</p>
+  <a class="down" href="#buildings" aria-label="小倉家の建物を見る"><span>BUILDINGS</span><b>↓</b></a>
+</header>
+
+<main>
+<section id="buildings" class="buildings">
+  <div class="section-head"><div><p class="eyebrow">OGURAYA BUILDINGS</p><h1>小倉家の建物</h1></div><p class="lead">四つの扉から、気になる建物を。</p></div>
+  <div class="grid">
+    <button class="door" data-building="tiffany"><span class="no">01</span><span class="plate jp-name">ティファニー館<small>TIFFANY-KAN</small></span><span class="hint">ENTER <b>↗</b></span></button>
+    <button class="door" data-building="ogura"><span class="no">02</span><span class="plate jp-name">小倉BLD<small>OGURA BLD.</small></span><span class="hint">ENTER <b>↗</b></span></button>
+    <button class="door" data-building="nexterra"><span class="no">03</span><span class="plate jp-name">ネクステラ橋本<small>NEXTERRA HASHIMOTO</small></span><span class="hint">ENTER <b>↗</b></span></button>
+    <button class="door" data-building="kanekura"><span class="no">04</span><span class="plate jp-name">宵灯橋本<small>TOMORI HASHIMOTO</small></span><span class="hint">ENTER <b>↗</b></span></button>
+  </div>
+</section>
+
+<section id="detail" class="detail" hidden>
+  <nav class="floating-nav" aria-label="建物ナビゲーション">
+    <button id="prevBuilding" type="button" aria-label="前の建物">‹<span>PREV</span></button>
+    <button id="buildingSwitcher" type="button" aria-expanded="false" aria-controls="switcherPanel">▦<span>BUILDINGS</span></button>
+    <button id="nextBuildingTop" type="button" aria-label="次の建物">›<span>NEXT</span></button>
+  </nav>
+  <div id="switcherPanel" class="switcher" hidden>
+    <div class="switcher-head"><span>OGURAYA BUILDINGS</span><button id="closeSwitcher" type="button" aria-label="閉じる">×</button></div>
+    <div class="switcher-grid">
+      <button data-jump="tiffany"><b>01</b><span>ティファニー館 <small>TIFFANY-KAN</small></span></button>
+      <button data-jump="ogura"><b>02</b><span>小倉BLD <small>OGURA BLD.</small></span></button>
+      <button data-jump="nexterra"><b>03</b><span>ネクステラ橋本 <small>NEXTERRA HASHIMOTO</small></span></button>
+      <button data-jump="kanekura"><b>04</b><span>宵灯橋本 <small>TOMORI HASHIMOTO</small></span></button>
+    </div>
+    <button id="closeDetail" class="switcher-back" type="button">← 四棟一覧へ戻る</button>
+  </div>
+  <div class="detail-hero">
+    <div class="detail-name"><p id="detailNo" class="eyebrow"></p><h2 id="detailTitle"></h2><p id="detailLatin" class="detail-latin"></p><p class="detail-intro">建物の現在の表情を、写真でゆっくり辿る場所。</p></div>
+    <div class="photo-stage"><span class="photo-label">PHOTO 01 / FACADE</span><img id="dog" src="assets/dog/sleep.png" alt="写真準備中"><div class="coming">PHOTO<br>COMING SOON</div></div>
+  </div>
+  <div class="walk-section"><div class="walk-photo"><span>PHOTO 02 / ENTRANCE</span></div><div class="walk-copy"><p class="eyebrow">BUILDING PORTRAIT</p><p>写真と建物の記録は、少しずつ追加していきます。</p></div></div>
+  <div class="detail-nav"><button id="backBottom" type="button">← 四棟へ戻る</button><button id="nextBuilding" type="button">次の建物 →</button></div>
+</section>
+
+<section class="about">
+  <div class="about-lockup">
+    <img class="about-mark" src="assets/logo/r08-color.svg" alt="">
+    <div class="about-name"><span>株式会社</span><img src="assets/logo/oguraya-brush-dark.svg" alt="小倉家"></div>
+  </div>
+  <div class="about-copy"><p class="eyebrow">ABOUT OGURAYA</p><p>建物を通して、会社を知ってもらうための小さな場所。</p></div>
+</section>
+</main>
+<footer><div class="footer-brand"><div class="footer-rule" aria-hidden="true"></div><span>© 2026 OGURAYA</span></div><img src="assets/dog/sit.png" alt="" class="footer-dog"></footer>
+<!--
+  🐻 そこまで見るの？
+  建物は表から。くまはソースから。
+  ここまで来たあなたには、たぶん何もありません。（笑）
+-->
+<script src="script.js"></script>
+</body>
+</html>
